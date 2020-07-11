@@ -1,0 +1,449 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #fff;
+}
+
+nav {
+  display: grid;
+  padding: 28px 48px;
+  grid-template-areas: 'logo link';
+}
+
+nav > .logo {
+  grid-area: logo;
+  width: 20%;
+}
+
+nav > .link {
+  display: grid;
+  grid-area: link;
+  align-items: center;
+  justify-content: end;
+}
+
+nav > .link > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  margin-left: 48px;
+}
+
+nav > .link > ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.first-section,
+.second-section,
+.third-section {
+  display: grid;
+  grid-template-areas: 'left right';
+  padding: 64px 58px;
+}
+
+.first-section > .left-side {
+  grid-area: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first-section > .left-side > .title {
+  font-size: 36px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  color: #070439;
+}
+
+.first-section > .left-side > .text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: #070439;
+}
+
+.first-section > .left-side > .form-email > input {
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 12px;
+  padding: 12px 20px;
+  width: 256px;
+  border-radius: 4px;
+  border: 2px solid #bfbfbf;
+  color: #070439;
+}
+
+.first-section > .left-side > .form-email > input::placeholder,
+.third-section > .right-side > input::placeholder {
+  color: #bfbfbf;
+}
+
+.first-section > .left-side > .form-email > a {
+  display: inline-block;
+  background-color: #3065f8;
+  padding: 12px 48px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+}
+
+.first-section > .left-side > .form-email > a:hover,
+.third-section > .right-side > a:hover {
+  transition: 0.5s;
+  color: #3065f8;
+  background-color: #fff;
+}
+
+.first-section > .right-side {
+  grid-area: right;
+}
+
+.first-section > .right-side > img {
+  padding: 48px;
+  width: 700px;
+}
+
+.bg-curve {
+  display: block;
+  width: 100%;
+}
+
+.second-section {
+  background-color: #f6f6fe;
+  color: #070439;
+}
+
+.second-section > .left-side {
+  grid-area: left;
+}
+
+.second-section > .left-side > .title {
+  font-size: 38px;
+  margin-bottom: 32px;
+}
+
+.second-section > .left-side > .text {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.second-section > .left-side > .see-how {
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: #3c9f8f;
+}
+
+.second-section > .left-side > span {
+  display: block;
+  margin-top: 5px;
+  height: 1px;
+  width: 165px;
+  background-color: #3c9f8f;
+}
+
+.second-section > .left-side > .card {
+  margin-top: 42px;
+  padding: 32px 40px;
+  width: 400px;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 14px 5px rgba(0, 0, 0, 0.05);
+}
+
+.second-section > .left-side > .card > img {
+  width: 20px;
+  margin-bottom: 18px;
+}
+
+.second-section > .left-side > .card > .quotes {
+  line-height: 2;
+}
+
+.second-section > .left-side > .card > .card-footer {
+  display: flex;
+  margin-top: 16px;
+}
+
+.second-section > .left-side > .card > .card-footer > img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  margin-right: 12px;
+}
+
+.second-section > .left-side > .card > .card-footer > .profile {
+  display: flex;
+  flex-direction: column;
+}
+
+.second-section > .left-side > .card > .card-footer > .profile > p {
+  font-size: 10px;
+}
+
+.second-section > .right-side {
+  grid-area: right;
+}
+
+.second-section > .right-side > img {
+  padding: 48px;
+  width: 600px;
+}
+
+.third-section {
+  background-color: #585989;
+}
+
+.third-section > .left-side > .title {
+  color: #fff;
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.third-section > .left-side > .text {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  width: 512px;
+}
+
+.third-section > .right-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 38px;
+}
+
+.third-section > .right-side > input {
+  width: 500px;
+  height: 45px;
+  padding: 0 18px;
+  border-radius: 4px;
+  border: 1px solid #bfbfbf;
+  margin-bottom: 12px;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+.third-section > .right-side > a {
+  background-color: #3065f8;
+  padding: 12px 20px;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 3px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  display: grid;
+  padding: 64px 58px;
+  grid-template-areas:
+    'logo logo logo logo'
+    'contact about-1 about-2 socmed'
+    'attrib attrib attrib attrib';
+  font-family: 'Open Sans', sans-serif;
+  background-color: #070439;
+  color: #fff;
+}
+
+footer > .logo {
+  grid-area: logo;
+  margin-top: 48px;
+}
+
+footer > .contact {
+  grid-area: contact;
+}
+
+footer > .contact > ul,
+footer > .about-1 > ul,
+footer > .about-2 > ul {
+  margin-top: 12px;
+  line-height: 2.5;
+  list-style: none;
+}
+
+footer > .contact > ul > li > img {
+  margin-right: 18px;
+}
+
+footer > .about-1 {
+  grid-area: about-1;
+}
+
+footer > .about-2 {
+  grid-area: about-2;
+}
+
+footer > .social-media {
+  grid-area: socmed;
+}
+
+footer > .social-media > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer > .social-media > a > i {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 18px;
+  margin-right: 12px;
+}
+
+footer > .social-media > a > i.fa-facebook-f {
+  padding: 8px 11.4px;
+}
+
+footer > .social-media > a > i.fa-instagram {
+  padding: 8px 9.15px;
+}
+
+footer > .attribution {
+  grid-area: attrib;
+  margin-top: 64px;
+  text-align: center;
+  font-size: 14px;
+}
+
+footer > .attribution > a {
+  color: #3065f8;
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  nav {
+    padding: 18px 24px;
+  }
+
+  nav > .logo {
+    width: 50%;
+  }
+
+  nav > .link > ul > li {
+    margin-left: 8px;
+  }
+
+  nav > .link > ul li a {
+    font-size: 12px;
+  }
+
+  .first-section,
+  .second-section {
+    padding: 18px 24px;
+    grid-template-areas: 'right' 'left';
+  }
+
+  .first-section > .right-side > img {
+    padding: 18px;
+    width: 100%;
+  }
+
+  .first-section > .left-side {
+    text-align: center;
+  }
+
+  .first-section > .left-side > .title {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-bottom: 16px;
+    color: #070439;
+  }
+
+  .first-section > .left-side > .text {
+    font-size: 16px;
+  }
+
+  .first-section > .left-side > .form-email > input,
+  .first-section > .left-side > .form-email > a {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .first-section > .left-side > .form-email > a {
+    margin-bottom: 96px;
+  }
+
+  .second-section > .right-side > img {
+    padding: 18px;
+    width: 100%;
+  }
+
+  .second-section > .left-side > .title {
+    font-size: 20px;
+    margin: 32px 0;
+    text-align: center;
+  }
+
+  .second-section > .left-side > .text {
+    color: #7e7e7e;
+    font-size: 14px;
+  }
+
+  .second-section > .left-side > .card {
+    margin-top: 28px;
+    padding: 24px 30px;
+    width: 100%;
+  }
+
+  .second-section > .left-side > .card > .quotes {
+    font-size: 12px;
+  }
+
+  .third-section {
+    padding: 18px 24px;
+    grid-template-areas: 'left' 'right';
+  }
+
+  .third-section > .left-side > .title {
+    margin-top: 32px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .third-section > .left-side > .text {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  .third-section > .right-side > input,
+  .third-section > .right-side > a {
+    width: 250px;
+  }
+
+  footer {
+    padding: 18px 24px;
+    grid-template-areas:
+      'logo'
+      'contact'
+      'about-1'
+      'about-2'
+      'socmed'
+      'attrib';
+  }
+
+  footer > .contact > ul,
+  footer > .about-1 > ul,
+  footer > .about-2 > ul {
+    margin-top: 24px;
+  }
+
+  footer > .social-media {
+    margin-top: 48px;
+    text-align: center;
+  }
+}
