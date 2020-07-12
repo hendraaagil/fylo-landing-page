@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
-
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -324,6 +322,7 @@ footer > .attribution > a {
   text-decoration: none;
 }
 
+/* Reponsive Breakpoint */
 @media (max-width: 375px) {
   nav {
     padding: 18px 24px;
@@ -395,6 +394,7 @@ footer > .attribution > a {
 
   .second-section > .left-side > .card {
     margin-top: 28px;
+    margin-bottom: 64px;
     padding: 24px 30px;
     width: 100%;
   }
